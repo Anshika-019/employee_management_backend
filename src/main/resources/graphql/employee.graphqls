@@ -1,0 +1,33 @@
+scalar Long
+
+type Employee {
+    id: ID!
+    name: String!
+    age: Int!
+    empClass: String!
+    subjects: [String!]!
+    attendance: Float!
+}
+
+type Query {
+    findAllEmployees: [Employee]!
+    countEmployees: Long!
+}
+
+input EmployeeFilter {
+    name: String
+    age: Int
+    empClass: String
+}
+
+type Mutation {
+    createEmployee(name: String!, age: Int!, empClass: String!, subjects: [String!]!, attendance: Float!): Employee!
+}
+
+input EmployeeInput {
+    name: String!
+    age: Int!
+    empClass: String!
+    subjects: [String!]!
+    attendance: Float!
+}
