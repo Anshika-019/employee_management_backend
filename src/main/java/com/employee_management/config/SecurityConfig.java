@@ -14,8 +14,9 @@ public class SecurityConfig {
         http
                 .csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests((authorize) -> authorize
-                        .anyRequest().authenticated())
-                .httpBasic(httpBasic -> {}); // Use JWT for production
+                        .anyRequest().permitAll());
+//                        .anyRequest().authenticated())
+//                .httpBasic(httpBasic -> {}); // Use JWT for production
         return http.build();
     }
 }
