@@ -10,6 +10,7 @@ public class EmployeeManagementBackendApplication {
 	public static void main(String[] args) {
 
 		SpringApplication.run(EmployeeManagementBackendApplication.class, args);
+		System.out.println("Employee Management Backend Application Started Successfully");
 	}
 
 }

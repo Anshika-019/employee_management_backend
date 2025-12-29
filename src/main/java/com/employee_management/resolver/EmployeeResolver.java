@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 @Component
-@RequiredArgsConstructor
+//@RequiredArgsConstructor
 public class EmployeeResolver implements GraphQLResolver<Employee> {
 
     @Autowired
